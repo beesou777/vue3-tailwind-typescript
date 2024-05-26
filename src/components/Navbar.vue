@@ -9,8 +9,7 @@
           👋
           <div
             v-if="store.show"
-            xyz="fade up small"
-            class="inline-block xyz-in"
+            class="inline-block"
           >
             {{ store.name }}
           </div>
@@ -57,7 +56,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue-demi";
+import { onMounted, ref } from "vue";
 import { useStore } from "../store/store";
 
 const store = useStore();

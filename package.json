@@ -1,5 +1,5 @@
 {
-  "name": "animation",
+  "name": "vuesetup",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,7 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@animxyz/vue3": "^0.6.7",
     "autoprefixer": "^10.4.14",
     "pinia": "^2.0.35",
     "postcss": "^8.4.23",

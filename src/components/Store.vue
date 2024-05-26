@@ -1,14 +1,12 @@
 <template>
-  <XyzTransitionGroup
+  <div
     class="flex flex-col justify-center items-center w-full md:max-w-screen-sm"
-    xyz="fade small"
   >
-    <div v-if="show" xyz="fade big">
+    <div v-if="show">
       <img class="w-20" src="../assets/pinia.svg" alt="Pinia" />
     </div>
     <h1
       v-if="show"
-      xyz="fade left"
       class="text-white text-center text-2xl font-bold md:text-3xl"
     >
       Pinia
@@ -32,10 +30,7 @@
       Try out this counter example
     </h1>
     <main v-if="show" class="px-4 w-full py-2">
-      <XyzTransition
-        appear
-        mode="out-in"
-        xyz="flip-up out-flip-down duration-2 ease-out"
+      <div
       >
         <div
           class="bg-[#0f1524] w-full h-48 text-yellow border border-[#ffffff3b] border-dashed rounded-lg flex justify-center items-center font-bold text-2xl"
@@ -43,7 +38,7 @@
         >
           {{ store.count }}
         </div>
-      </XyzTransition>
+      </div>
     </main>
     <div v-if="show" class="my-5">
       <button @click="store.increment" class="btn mx-4">Increase</button>
@@ -70,11 +65,11 @@
       <button @click="saveName" class="btn mx-4">Save</button>
       <button @click="reset" class="btn-outline mx-4">Reset</button>
     </div>
-  </XyzTransitionGroup>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue-demi";
+import { onMounted, ref } from "vue";
 import { useStore } from "../store/store";
 let Name = ref("");
 let show = ref(false);

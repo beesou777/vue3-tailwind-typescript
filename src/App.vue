@@ -11,8 +11,8 @@ import Navbar from "./components/Navbar.vue";
       </div>
     </main>
   </section>
-  <div class="square" v-if="true" xyz="inherit up"></div>
-  <div class="square" v-if="true" xyz="inherit down"></div>
+  <div class="square" v-if="true"></div>
+  <div class="square" v-if="true"></div>
 </template>
 <style lang="postcss">
 body::-webkit-scrollbar {

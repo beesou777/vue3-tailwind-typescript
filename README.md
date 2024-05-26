@@ -11,7 +11,6 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 📦 [Components auto importing](./src/components)
 
 - 🎨 [Tailwindcss](https://tailwindcss.com) - A utility-first CSS framework
-  CSS animation toolkit
 
 - 🔥 Use the new `<script setup>` style
 
@@ -37,6 +36,8 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 If you prefer to do it manually with the cleaner git history
 
 ```bash
+git clone https://github.com/beesou777/vue3-tailwind-typescript.git
 cd vue3-tailwind-typescript
 yarn
+yarn dev
 ```
