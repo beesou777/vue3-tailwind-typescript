@@ -1,0 +1,25 @@
+{
+  "name": "animation",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@animxyz/vue3": "^0.6.7",
+    "autoprefixer": "^10.4.14",
+    "pinia": "^2.0.35",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vue-tsc": "^1.6.4"
+  }
+}
